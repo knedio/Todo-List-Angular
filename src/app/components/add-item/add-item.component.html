@@ -1,0 +1,7 @@
+<div>
+	<form (ngSubmit)="onSubmit()">
+		<input type="text" name="title" [(ngModel)]="title"  />
+		<input type="submit" *ngIf="!id" value="Add">
+		<input type="submit" *ngIf="id" value="Update">
+	</form>
+</div>

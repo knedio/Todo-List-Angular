@@ -1,0 +1,18 @@
+<div>
+	<app-header></app-header>
+	<app-add-item 
+		(updateTodo)="updateTodo($event)"
+		(addTodo)="addTodo($event)"
+		[updateData]="updateData"
+	>
+	</app-add-item>
+	<app-todo-item 
+		*ngFor="let todo of todos" 
+		[todo]="todo"
+		(updateTodo)="updateForm($event)"
+		(deleteTodo)="deleteTodo($event)"
+		(markCompleted)="markCompleted($event)"
+	>
+		<li>{{ todo.title }}</li>
+	</app-todo-item>
+</div>

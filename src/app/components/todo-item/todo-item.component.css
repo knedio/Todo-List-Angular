@@ -1,0 +1,30 @@
+.todo-item {
+	background: #f4f4f4;
+	padding: 10px;
+	border-bottom: 1px #ccc dotted;
+}
+.update-btn {
+	float: right;
+	padding: 5px 9px;
+	margin-right: 5px;
+	border-radius: 5px;
+	border: none;
+	background: #337ab7;
+	color: #fff;
+}
+.del-btn {
+	float: right;
+	margin-right: 5px;
+	padding: 5px 9px;
+	border-radius: 5px;
+	border: none;
+	background: #d9534f;
+	color: #fff;
+}
+.text-right {
+	background: #337ab7;
+	text-align: right;
+}
+.is-complete {
+	text-decoration: line-through;
+}
